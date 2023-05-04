@@ -26,16 +26,22 @@ h3 {
   background-color: var(--black-color);
   border: 2px solid var(--white-color);
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .btn:not(:last-child) {
   margin-right: 15px;
 }
-
+.btn:hover {
+  background-color: rgb(43, 41, 41);
+  border: none;
+}
 img {
   width: 70%;
 }
-
+p:not(:last-child) {
+  margin-bottom: 20px;
+}
 .chosen-move,
 .score {
   font-size: 24px;
@@ -49,7 +55,7 @@ img {
 }
 
 .chosen-move img {
-  width: 10%;
+  width: 8%;
 }
 
 .reset-btn {
@@ -61,4 +67,5 @@ img {
   border: none;
   background-color: #ea9c1f;
   color: var(--white-color);
+  cursor: pointer;
 }
